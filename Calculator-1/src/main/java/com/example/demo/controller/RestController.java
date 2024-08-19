@@ -10,5 +10,11 @@ public class RestController {
     public String getMessage(@RequestParam(name = "msg", required = false, defaultValue = "Hello") String message) {
         return "Your message: " + message;
     }
+    
+    
+    @GetMapping("/message2")
+    public String getMessage2(@RequestParam(name = "msg2", required = false, defaultValue = "Hi") String message) {
+        return "Your message: " + message;
+    }
 
 }
